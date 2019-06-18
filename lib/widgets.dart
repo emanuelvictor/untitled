@@ -80,7 +80,7 @@ class EmojiIcon extends StatelessWidget {
     );
 
     final flatButton = FlatButton(
-      padding: EdgeInsets.fromLTRB(4, 8, 4, 0),
+      padding: EdgeInsets.fromLTRB(4, 8, 4, 4),
       onPressed: () {},
       child: column,
     );
