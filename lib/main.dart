@@ -51,54 +51,55 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Flexible(
-              child: Card(
-                margin: EdgeInsets.all(50),
-                child: Padding(
-                  padding: EdgeInsets.all(20.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Flexible(
-                          child: Text('Como você avalia nosso atendimento?',
-                              style: TextStyle(fontSize: 20))),
-                      Flexible(
-                        child: Padding(
-                          padding: EdgeInsets.fromLTRB(0, 15, 0, 10),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              EmojiIcon(EmojiEnum.um),
-                              EmojiIcon(EmojiEnum.dois),
-                              EmojiIcon(EmojiEnum.tres),
-                              EmojiIcon(EmojiEnum.quatro),
-                              EmojiIcon(EmojiEnum.cinco),
-                            ],
+        child: Container(
+          width: 490,
+          child: Row(
+            children: [
+              Flexible(
+                child: Card(
+                  child: Padding(
+                    padding: EdgeInsets.all(20.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Flexible(
+                            child: Text('Como você avalia nosso atendimento?',
+                                style: TextStyle(fontSize: 20))),
+                        Flexible(
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(0, 15, 0, 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                EmojiIcon(EmojiEnum.um),
+                                EmojiIcon(EmojiEnum.dois),
+                                EmojiIcon(EmojiEnum.tres),
+                                EmojiIcon(EmojiEnum.quatro),
+                                EmojiIcon(EmojiEnum.cinco),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      Flexible(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Text('1/2'),
-                            FlatButton(
-                              onPressed: () => {},
-                              child: Text('Próximo',
-                                  style: TextStyle(fontSize: 20)),
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
+                        Flexible(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text('1/2'),
+                              FlatButton(
+                                onPressed: () => {},
+                                child: Text('Próximo',
+                                    style: TextStyle(fontSize: 20)),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
