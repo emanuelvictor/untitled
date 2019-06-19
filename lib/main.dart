@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'application/presentation/avaliacao/avaliar/executar-avaliacao/selecionar-nota-e-quesitos/selecionar-nota/selecionar-nota.dart';
 
@@ -7,9 +8,10 @@ import 'application/presentation/avaliacao/avaliar/executar-avaliacao/selecionar
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+//    SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.top, SystemUiOverlay.bottom]);
+    SystemChrome.setEnabledSystemUIOverlays ([]);
     return Container(
       child: MaterialApp(
         title: 'Flutter Demo',

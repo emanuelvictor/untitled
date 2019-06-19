@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/application/controls/quesito-icon.dart';
-import 'package:untitled/application/presentation/avaliacao/avaliar/executar-avaliacao/feedback-geral/feedback-geral.dart';
+import 'package:untitled/application/presentation/avaliacao/avaliar/executar-avaliacao/conclusao-geral/conclusao.dart';
 
-class SelecionarQuesitos extends StatelessWidget {
+class FeedbackGeral extends StatelessWidget {
   @override
   Widget build(final BuildContext context) {
 
     next() {
       return () {
         Navigator.push(context, MaterialPageRoute(builder: (_) {
-          return FeedbackGeral();
+          return Conclusao();
         }));
       };
     }
@@ -32,27 +32,21 @@ class SelecionarQuesitos extends StatelessWidget {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Flexible( child: Text('Selecione o atendente', style: TextStyle(fontSize: 20))),
                         Flexible(
                           flex: 3,
-                          child: GridView.count(
-                            crossAxisCount: 4,
-                            children: List.generate(7, (index) {
-                              return Center(
-                                child: QuesitoIcon(),
-                              );
-                            }),
-                          ),
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                                labelText: 'Feedback'
+                            ),
+                          )
                         ),
                         Flexible(
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
-                              Text('1/2', style: TextStyle(fontSize: 20)),
                               FlatButton(
                                 onPressed: next(),
-                                child: Text('Próximo',
-                                    style: TextStyle(fontSize: 20)),
+                                child: Text('Concluir', style: TextStyle(fontSize: 20)),
                               ),
                             ],
                           ),
