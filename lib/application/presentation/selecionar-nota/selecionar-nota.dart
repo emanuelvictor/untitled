@@ -43,7 +43,7 @@ class SelecionarNota extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              Text('1/2'),
+                              Text('1/2', style: TextStyle(fontSize: 20)),
 //                              FlatButton(
 //                                onPressed: () => {},
 //                                child: Text('Próximo',
