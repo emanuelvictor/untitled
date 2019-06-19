@@ -57,6 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Flexible(
                 child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
                   child: Padding(
                     padding: EdgeInsets.all(20.0),
                     child: Column(
