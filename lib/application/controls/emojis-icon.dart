@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:untitled/application/presentation/selecionar-quesitos/selecionar-quesitos.dart';
 
 class EmojiIcon extends StatelessWidget {
   EmojiEnum emojiEnum;
@@ -81,7 +82,12 @@ class EmojiIcon extends StatelessWidget {
 
     final flatButton = FlatButton(
       padding: EdgeInsets.fromLTRB(4, 8, 4, 4),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => SelecionarQuesitos()),
+        );
+      },
       child: column,
     );
 
