@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:untitled/application/presentation/avaliacao/avaliar/selecionar-quesitos/selecionar-quesitos.dart';
 
-class QuesitoIcon extends StatelessWidget {
+class QuesitoIcon extends StatefulWidget {
+  @override
+  StateQuesitoIcon createState() => StateQuesitoIcon();
+}
+
+class StateQuesitoIcon extends State<QuesitoIcon> {
+
+  var selected = false;
+
   @override
   Widget build(final BuildContext context) {
     final String pathToIcon = 'assets/images/person.svg';
     final String labelName = 'Quesi asdfasdfa asdfasdf sdfato';
-    var selected = false;
     final Widget svgIcon = new SvgPicture.asset(
       pathToIcon,
       color: Colors.white,
@@ -39,16 +45,17 @@ class QuesitoIcon extends StatelessWidget {
     );
 
     final flatButton = FlatButton(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.zero,
+      ),
       padding: EdgeInsets.fromLTRB(4, 8, 4, 4),
-      color: !selected ? Colors.white : Colors.lightBlueAccent,
-      onPressed: () {
-        selected = !selected;
-      },
+      color: !selected ? Colors.white : Colors.lightBlue,
+      onPressed: () => setState(() {
+            selected = !selected;
+          }),
       child: column,
     );
 
     return Container(child: flatButton);
   }
-
-  QuesitoIcon();
 }
