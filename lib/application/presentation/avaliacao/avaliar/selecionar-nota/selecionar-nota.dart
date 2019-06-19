@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/application/controls/emojis-icon.dart';
+import 'package:untitled/application/controls/emoji-icon.dart';
 
 class SelecionarNota extends StatelessWidget {
   @override

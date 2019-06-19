@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:untitled/application/presentation/selecionar-quesitos/selecionar-quesitos.dart';
+import 'package:untitled/application/presentation/avaliacao/avaliar/selecionar-quesitos/selecionar-quesitos.dart';
 
 class EmojiIcon extends StatelessWidget {
   EmojiEnum emojiEnum;

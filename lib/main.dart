@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'application/presentation/selecionar-nota/selecionar-nota.dart';
+import 'application/presentation/avaliacao/avaliar/selecionar-nota/selecionar-nota.dart';
+
 
 void main() => runApp(MyApp());
 
