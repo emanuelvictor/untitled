@@ -3,7 +3,16 @@ import 'package:untitled/application/controls/quesito-icon.dart';
 
 class SelecionarQuesitos extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
+
+    next() {
+      return () {
+        Navigator.push(context, MaterialPageRoute(builder: (_) {
+          return SelecionarQuesitos();
+        }));
+      };
+    }
+
     return Scaffold(
       backgroundColor: Color.fromRGBO(74, 33, 116, 1.0),
       body: Center(
@@ -38,7 +47,7 @@ class SelecionarQuesitos extends StatelessWidget {
                             children: <Widget>[
                               Text('1/2', style: TextStyle(fontSize: 20)),
                               FlatButton(
-                                onPressed: () => {},
+                                onPressed: next(),
                                 child: Text('Próximo',
                                     style: TextStyle(fontSize: 20)),
                               ),

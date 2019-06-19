@@ -30,11 +30,6 @@ class Error extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                EmojiIcon(EmojiEnum.um),
-                                EmojiIcon(EmojiEnum.dois),
-                                EmojiIcon(EmojiEnum.tres),
-                                EmojiIcon(EmojiEnum.quatro),
-                                EmojiIcon(EmojiEnum.cinco),
                               ],
                             ),
                           ),
