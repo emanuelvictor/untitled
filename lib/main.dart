@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/widgets.dart';
+
+import 'emojis-icon.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.deepPurple,
         ),
-        home: MyHomePage(title: 'Assessment'),
+        home: MyHomePage(title: 'Sentries'),
       ),
     );
   }
@@ -50,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(74, 33, 116, 1.0),
       body: Center(
         child: Container(
           width: 490,
